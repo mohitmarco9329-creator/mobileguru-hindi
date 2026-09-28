@@ -4,232 +4,204 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mobile Guru Hindi | Mobile Tips & Settings</title>
+  <title>Mobile Guru Hindi - Android Tips & Mobile Solutions</title>
 
-  <meta name="description"
-    content="Mobile Guru Hindi पर Android settings, mobile problems, battery, storage, internet, WhatsApp और smartphone tips की आसान जानकारी हिंदी में पाएं।">
+  <meta name="description" content="Mobile Guru Hindi पर Android Tips, Mobile Settings, Battery, Storage, WhatsApp, Internet, Wi-Fi और Phone Problems के आसान Solutions हिंदी में पढ़ें।">
+
+  <meta name="keywords" content="Android Tips Hindi, Mobile Tips Hindi, Phone Problem Solution, Android Settings, Mobile Guru Hindi">
 
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f3f6fa;
+      background: #f5f7fb;
       color: #222;
-      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #0757d9, #00a8ff);
+      background: linear-gradient(135deg, #1565c0, #42a5f5);
       color: white;
       text-align: center;
-      padding: 30px 15px;
+      padding: 45px 15px;
     }
 
     header h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+      margin: 0;
+      font-size: 36px;
     }
 
     header p {
-      font-size: 16px;
+      font-size: 18px;
+      margin: 10px 0 0;
     }
 
     nav {
       background: white;
-      padding: 12px 8px;
+      padding: 12px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       position: sticky;
       top: 0;
       z-index: 100;
     }
 
     nav a {
-      display: inline-block;
-      color: #0757d9;
+      color: #1565c0;
       text-decoration: none;
       font-weight: bold;
-      margin: 5px 8px;
+      margin: 5px 7px;
       font-size: 14px;
+      display: inline-block;
     }
 
     .hero {
-      max-width: 1050px;
+      max-width: 1000px;
       margin: 25px auto;
       padding: 35px 20px;
-      background: white;
-      border-radius: 18px;
       text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,.07);
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
     }
 
     .hero h2 {
-      font-size: 27px;
-      margin-bottom: 8px;
+      color: #1565c0;
+      font-size: 28px;
+      margin-top: 0;
     }
 
     .hero p {
+      font-size: 16px;
       color: #555;
-      max-width: 700px;
-      margin: auto;
     }
 
-    .search {
-      display: flex;
-      max-width: 650px;
-      margin: 22px auto 0;
+    .search-box {
+      max-width: 600px;
+      margin: 20px auto 0;
     }
 
-    .search input {
-      flex: 1;
-      padding: 14px;
+    .search-box input {
+      width: 100%;
+      padding: 15px;
       border: 1px solid #ddd;
-      border-radius: 10px 0 0 10px;
-      font-size: 15px;
+      border-radius: 30px;
+      font-size: 16px;
       outline: none;
     }
 
-    .search button {
-      border: none;
-      background: #0757d9;
-      color: white;
-      padding: 14px 20px;
-      border-radius: 0 10px 10px 0;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .container {
-      max-width: 1050px;
-      margin: auto;
-      padding: 0 15px 40px;
+    .section {
+      max-width: 1100px;
+      margin: 35px auto;
+      padding: 0 15px;
     }
 
     .section-title {
       text-align: center;
-      margin: 35px 0 20px;
-      font-size: 25px;
+      color: #1565c0;
+      font-size: 28px;
+      margin-bottom: 25px;
     }
 
     .categories {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 15px;
     }
 
     .category {
       background: white;
-      padding: 22px 10px;
-      border-radius: 15px;
+      padding: 20px 10px;
       text-align: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,.07);
-      text-decoration: none;
-      color: #222;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+      font-weight: bold;
     }
 
-    .category .icon {
-      font-size: 34px;
-      margin-bottom: 7px;
-    }
-
-    .category h3 {
-      color: #0757d9;
-      font-size: 17px;
+    .category span {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 8px;
     }
 
     .articles {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
+      gap: 20px;
     }
 
-    .article {
+    .card {
       background: white;
       padding: 22px;
-      border-radius: 15px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.07);
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
     }
 
-    .article h3 {
-      color: #0757d9;
-      font-size: 19px;
-      margin-bottom: 8px;
+    .card:hover {
+      transform: translateY(-3px);
     }
 
-    .article p {
+    .card .icon {
+      font-size: 35px;
+    }
+
+    .card h3 {
+      color: #1565c0;
+      margin: 10px 0;
+      font-size: 21px;
+    }
+
+    .card p {
       color: #555;
-      font-size: 14px;
+      line-height: 1.6;
     }
 
-    .tag {
+    .read-more {
       display: inline-block;
-      background: #e8f2ff;
-      color: #0757d9;
-      padding: 4px 9px;
-      border-radius: 20px;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-
-    .read {
-      display: inline-block;
-      margin-top: 14px;
-      background: #0757d9;
+      margin-top: 8px;
+      background: #1565c0;
       color: white;
-      padding: 9px 15px;
-      border-radius: 8px;
       text-decoration: none;
-      font-size: 14px;
+      padding: 10px 18px;
+      border-radius: 7px;
       font-weight: bold;
     }
 
-    .info {
+    .about {
       background: white;
-      margin-top: 30px;
       padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.07);
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      line-height: 1.7;
     }
 
-    .info h2 {
-      color: #0757d9;
-      margin-bottom: 10px;
+    .info-box {
+      background: #e3f2fd;
+      border-left: 5px solid #1565c0;
+      padding: 18px;
+      border-radius: 8px;
+      margin-top: 20px;
     }
 
     footer {
-      background: #111827;
+      background: #1565c0;
       color: white;
       text-align: center;
-      padding: 28px 15px;
-      margin-top: 20px;
+      padding: 30px 15px;
+      margin-top: 40px;
     }
 
     footer a {
-      color: #8ec5ff;
+      color: white;
       text-decoration: none;
-      margin: 0 7px;
-      font-size: 14px;
+      margin: 0 5px;
     }
 
-    .no-result {
-      display: none;
-      text-align: center;
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    @media (max-width: 700px) {
-      header h1 {
-        font-size: 26px;
-      }
-
+    @media (max-width: 800px) {
       .categories {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -237,13 +209,24 @@
       .articles {
         grid-template-columns: 1fr;
       }
+    }
 
-      .hero h2 {
-        font-size: 23px;
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 28px;
       }
 
-      .search input {
-        min-width: 0;
+      .hero h2 {
+        font-size: 24px;
+      }
+
+      .categories {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      nav a {
+        font-size: 13px;
+        margin: 4px;
       }
     }
   </style>
@@ -253,348 +236,340 @@
 
 <header>
   <h1>📱 Mobile Guru Hindi</h1>
-  <p>मोबाइल की हर समस्या का आसान समाधान</p>
+  <p>Mobile Tips, Android Settings और आसान Solutions</p>
 </header>
 
 <nav>
-  <a href="#home">Home</a>
-  <a href="#categories">Categories</a>
-  <a href="#articles">Tips</a>
-  <a href="#about">About</a>
+  <a href="index.html">Home</a>
+  <a href="battery.html">Battery</a>
+  <a href="phone-slow.html">Phone Slow</a>
+  <a href="storage-full.html">Storage</a>
+  <a href="whatsapp-storage.html">WhatsApp</a>
+  <a href="internet-slow.html">Internet</a>
+  <a href="phone-heating.html">Heating</a>
+  <a href="app-install-problem.html">App Install</a>
+  <a href="call-problem.html">Call</a>
+  <a href="charging-problem.html">Charging</a>
+  <a href="wifi-problem.html">Wi-Fi</a>
 </nav>
 
-<section class="hero" id="home">
+<section class="hero">
 
-  <h2>📱 Mobile Tips & Settings</h2>
+  <h2>📱 Mobile की हर Problem का आसान Solution</h2>
 
   <p>
-    Android settings, phone problems, battery, storage,
-    internet, WhatsApp और smartphone की आसान जानकारी हिंदी में।
+    Android Phone, Mobile Settings, Battery, Storage, WhatsApp,
+    Internet, Wi-Fi और दूसरी Mobile Problems के आसान Tips हिंदी में।
   </p>
 
-  <div class="search">
+  <div class="search-box">
     <input
       type="text"
-      id="searchBox"
-      placeholder="जैसे Battery, Phone Slow, WhatsApp..."
-      onkeyup="searchArticles()">
-
-    <button onclick="searchArticles()">Search</button>
+      id="searchInput"
+      placeholder="🔍 अपनी समस्या Search करें..."
+      onkeyup="searchArticles()"
+    >
   </div>
 
 </section>
 
-<div class="container">
+<section class="section">
 
-  <!-- Categories -->
-
-  <h2 class="section-title" id="categories">
-    📚 Categories
-  </h2>
+  <h2 class="section-title">📂 Categories</h2>
 
   <div class="categories">
 
-    <a class="category" href="#settings">
-      <div class="icon">⚙️</div>
-      <h3>Mobile Settings</h3>
-    </a>
+    <div class="category">
+      <span>🔋</span>
+      Battery
+    </div>
 
-    <a class="category" href="#problems">
-      <div class="icon">🔧</div>
-      <h3>Phone Problems</h3>
-    </a>
+    <div class="category">
+      <span>⚙️</span>
+      Android Settings
+    </div>
 
-    <a class="category" href="#android">
-      <div class="icon">🤖</div>
-      <h3>Android Tips</h3>
-    </a>
+    <div class="category">
+      <span>📱</span>
+      Phone Problems
+    </div>
 
-    <a class="category" href="#brands">
-      <div class="icon">📱</div>
-      <h3>Mobile Brands</h3>
-    </a>
+    <div class="category">
+      <span>💬</span>
+      WhatsApp
+    </div>
 
-    <a class="category" href="#security">
-      <div class="icon">🔐</div>
-      <h3>Security</h3>
-    </a>
+    <div class="category">
+      <span>🌐</span>
+      Internet
+    </div>
 
-    <a class="category" href="#whatsapp">
+    <div class="category">
+      <span>📶</span>
+      Wi-Fi
+    </div>
+
+    <div class="category">
+      <span>🔒</span>
+      Security
+    </div>
+
+    <div class="category">
+      <span>🛠️</span>
+      Solutions
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <h2 class="section-title">🔥 Latest Mobile Tips</h2>
+
+  <div class="articles" id="articles">
+
+    <!-- Article 1 -->
+    <div class="card">
+
+      <div class="icon">🔋</div>
+
+      <h3>Phone की Battery जल्दी खत्म क्यों होती है?</h3>
+
+      <p>
+        Battery जल्दी खत्म होने के कारण और Battery Backup बढ़ाने के 10 आसान तरीके जानें।
+      </p>
+
+      <a class="read-more" href="battery.html">
+        Read More →
+      </a>
+
+    </div>
+
+    <!-- Article 2 -->
+    <div class="card">
+
+      <div class="icon">🐌</div>
+
+      <h3>Phone Slow क्यों हो जाता है?</h3>
+
+      <p>
+        Slow Phone को Fast करने के आसान तरीके और जरूरी Android Settings जानें।
+      </p>
+
+      <a class="read-more" href="phone-slow.html">
+        Read More →
+      </a>
+
+    </div>
+
+    <!-- Article 3 -->
+    <div class="card">
+
+      <div class="icon">💾</div>
+
+      <h3>Phone की Storage Full हो गई है?</h3>
+
+      <p>
+        Phone की Storage खाली करने और जरूरी Files सुरक्षित रखने के आसान तरीके।
+      </p>
+
+      <a class="read-more" href="storage-full.html">
+        Read More →
+      </a>
+
+    </div>
+
+    <!-- Article 4 -->
+    <div class="card">
+
       <div class="icon">💬</div>
-      <h3>WhatsApp</h3>
-    </a>
 
-  </div>
+      <h3>WhatsApp की Storage Full हो गई है?</h3>
 
-  <!-- Articles -->
-
-  <h2 class="section-title" id="articles">
-    🔥 Latest Mobile Tips
-  </h2>
-
-  <div class="articles" id="articleList">
-
-    <article class="article" id="settings">
-      <span class="tag">Battery</span>
-      <h3>🔋 Phone की Battery जल्दी खत्म होती है?</h3>
       <p>
-        Battery जल्दी खत्म होने के सामान्य कारण और
-        battery backup बेहतर करने वाली settings के बारे में जानें।
+        WhatsApp की Unwanted Photos, Videos और Files हटाकर Space खाली करें।
       </p>
-      <a class="read" href="#battery">Read More</a>
-    </article>
 
-    <article class="article" id="problems">
-      <span class="tag">Performance</span>
-      <h3>⚡ Phone Slow हो गया है?</h3>
+      <a class="read-more" href="whatsapp-storage.html">
+        Read More →
+      </a>
+
+    </div>
+
+    <!-- Article 5 -->
+    <div class="card">
+
+      <div class="icon">🌐</div>
+
+      <h3>Internet Slow क्यों है?</h3>
+
       <p>
-        Phone slow होने के कारण और smartphone की performance
-        बेहतर करने के practical तरीके जानें।
+        Mobile Internet की Speed और Connectivity से जुड़ी Problems के आसान Solutions।
       </p>
-      <a class="read" href="#slowphone">Read More</a>
-    </article>
 
-    <article class="article">
-      <span class="tag">Storage</span>
-      <h3>💾 Phone Storage कैसे खाली करें?</h3>
+      <a class="read-more" href="internet-slow.html">
+        Read More →
+      </a>
+
+    </div>
+
+    <!-- Article 6 -->
+    <div class="card">
+
+      <div class="icon">🔥</div>
+
+      <h3>Phone गर्म क्यों होता है?</h3>
+
       <p>
-        Unnecessary files, cache और unused apps को manage करके
-        phone में storage खाली करने की जानकारी।
+        Phone Heating के कारण और Phone को ज्यादा गर्म होने से बचाने के तरीके।
       </p>
-      <a class="read" href="#storage">Read More</a>
-    </article>
 
-    <article class="article">
-      <span class="tag">Internet</span>
-      <h3>📶 Internet Speed धीमी है?</h3>
+      <a class="read-more" href="phone-heating.html">
+        Read More →
+      </a>
+
+    </div>
+
+    <!-- Article 7 -->
+    <div class="card">
+
+      <div class="icon">📲</div>
+
+      <h3>Phone में App Install नहीं हो रहा?</h3>
+
       <p>
-        Mobile internet slow होने पर network और phone की
-        settings को कैसे check करें।
+        Play Store, Storage, Internet और App Compatibility से जुड़ी Problems के Solutions।
       </p>
-      <a class="read" href="#internet">Read More</a>
-    </article>
 
-    <article class="article">
-      <span class="tag">Heating</span>
-      <h3>🌡️ Phone ज्यादा गर्म हो रहा है?</h3>
+      <a class="read-more" href="app-install-problem.html">
+        Read More →
+      </a>
+
+    </div>
+
+    <!-- Article 8 -->
+    <div class="card">
+
+      <div class="icon">📞</div>
+
+      <h3>Phone में Call नहीं लग रही?</h3>
+
       <p>
-        Smartphone heating के सामान्य कारण और phone को
-        सुरक्षित तरीके से cool रखने के उपाय।
+        Call Drop, Network, SIM, VoLTE और Calling Problems को ठीक करने के तरीके।
       </p>
-      <a class="read" href="#heating">Read More</a>
-    </article>
 
-    <article class="article">
-      <span class="tag">Android</span>
-      <h3>📱 Phone Hang होने पर क्या करें?</h3>
+      <a class="read-more" href="call-problem.html">
+        Read More →
+      </a>
+
+    </div>
+
+    <!-- Article 9 -->
+    <div class="card">
+
+      <div class="icon">🔌</div>
+
+      <h3>Phone की Battery Charge नहीं हो रही?</h3>
+
       <p>
-        Phone बार-बार hang या freeze हो रहा है तो किन
-        चीजों को check करना चाहिए।
+        Charger, Cable, Charging Port और Battery से जुड़ी Problems के आसान Solutions।
       </p>
-      <a class="read" href="#hang">Read More</a>
-    </article>
 
-    <article class="article" id="android">
-      <span class="tag">Android</span>
-      <h3>🤖 Android की Useful Settings</h3>
+      <a class="read-more" href="charging-problem.html">
+        Read More →
+      </a>
+
+    </div>
+
+    <!-- Article 10 -->
+    <div class="card">
+
+      <div class="icon">📶</div>
+
+      <h3>Phone में Wi-Fi Connect नहीं हो रहा?</h3>
+
       <p>
-        Android smartphone में मौजूद useful settings और
-        features की जानकारी।
+        Wi-Fi Connect, Disconnect और Internet नहीं चलने की Problems को ठीक करें।
       </p>
-      <a class="read" href="#androidtips">Read More</a>
-    </article>
 
-    <article class="article" id="security">
-      <span class="tag">Security</span>
-      <h3>🔐 App Permissions कैसे Check करें?</h3>
-      <p>
-        Apps को दिए गए camera, microphone, location और
-        दूसरे permissions को कैसे manage करें।
-      </p>
-      <a class="read" href="#permissions">Read More</a>
-    </article>
+      <a class="read-more" href="wifi-problem.html">
+        Read More →
+      </a>
 
-    <article class="article" id="whatsapp">
-      <span class="tag">WhatsApp</span>
-      <h3>💬 WhatsApp की Privacy Settings</h3>
-      <p>
-        WhatsApp में privacy और security से जुड़ी
-        important settings को समझें।
-      </p>
-      <a class="read" href="#whatsapptips">Read More</a>
-    </article>
-
-    <article class="article" id="brands">
-      <span class="tag">Mobile Brands</span>
-      <h3>📱 Samsung, Redmi, Vivo और Realme Tips</h3>
-      <p>
-        अलग-अलग smartphone brands की useful settings और
-        common problems के solutions जल्द यहाँ मिलेंगे।
-      </p>
-      <a class="read" href="#brandtips">Read More</a>
-    </article>
+    </div>
 
   </div>
 
-  <div class="no-result" id="noResult">
-    😕 इस search से कोई article नहीं मिला।
-  </div>
+</section>
 
-  <!-- About -->
+<section class="section">
 
-  <div class="info" id="about">
+  <h2 class="section-title">ℹ️ Mobile Guru Hindi के बारे में</h2>
 
-    <h2>📱 Mobile Guru Hindi के बारे में</h2>
+  <div class="about">
 
     <p>
-      Mobile Guru Hindi का उद्देश्य smartphone users को
-      mobile settings, Android tips, phone problems,
-      WhatsApp और security से जुड़ी आसान जानकारी हिंदी में देना है।
+      <strong>Mobile Guru Hindi</strong> एक Hindi Mobile Tips वेबसाइट है,
+      जहां आपको Android Phone, Mobile Settings और रोजमर्रा की Mobile Problems
+      के आसान Solutions मिलते हैं।
     </p>
-
-    <br>
 
     <p>
-      यहाँ दी गई जानकारी को अपने smartphone के model,
-      Android version और manufacturer की settings के अनुसार
-      check करें, क्योंकि options अलग-अलग phones में अलग हो सकते हैं।
+      हमारा उद्देश्य है कि Mobile की सामान्य समस्याओं को आसान भाषा में समझाया जाए,
+      ताकि कोई भी व्यक्ति अपने Phone की Basic Problems को समझ सके।
     </p>
+
+    <div class="info-box">
+      💡 <strong>Tip:</strong>
+      अगर आपको किसी Mobile Problem का Solution चाहिए,
+      तो ऊपर दिए गए Search Box में अपनी Problem लिखकर Article खोज सकते हैं।
+    </div>
 
   </div>
 
-  <!-- Sample detailed tips -->
+</section>
 
-  <div class="info" id="battery">
+<section class="section">
 
-    <h2>🔋 Battery जल्दी खत्म होने पर क्या करें?</h2>
+  <div class="about">
 
-    <p>
-      सबसे पहले Settings में Battery section खोलकर देखें कि
-      कौन-सा app ज्यादा battery इस्तेमाल कर रहा है।
-      अनावश्यक background activity कम करें और screen brightness
-      तथा screen timeout को अपनी जरूरत के अनुसार रखें।
-    </p>
+    <h2>📚 हमारे Popular Topics</h2>
 
-  </div>
-
-  <div class="info" id="slowphone">
-
-    <h2>⚡ Phone Slow होने पर क्या करें?</h2>
-
-    <p>
-      Unused apps हटाएँ, storage में पर्याप्त खाली जगह रखें,
-      अनावश्यक background apps को manage करें और phone को
-      समय-समय पर restart करें।
-    </p>
+    <ul>
+      <li>Android Phone Tips</li>
+      <li>Mobile Settings</li>
+      <li>Battery Saving Tips</li>
+      <li>Storage Management</li>
+      <li>WhatsApp Tips</li>
+      <li>Internet और Wi-Fi Problems</li>
+      <li>Phone Heating Problems</li>
+      <li>Charging Problems</li>
+      <li>Call और Network Problems</li>
+      <li>App Installation Problems</li>
+    </ul>
 
   </div>
 
-  <div class="info" id="storage">
-
-    <h2>💾 Storage खाली करने का तरीका</h2>
-
-    <p>
-      Downloads, duplicate files और unused apps को check करें।
-      जरूरी photos और videos का backup लेने के बाद ही
-      unwanted files हटाएँ।
-    </p>
-
-  </div>
-
-  <div class="info" id="internet">
-
-    <h2>📶 Internet Speed Check करने के तरीके</h2>
-
-    <p>
-      Network signal check करें, Airplane Mode को थोड़ी देर
-      चालू करके फिर बंद करें और mobile network settings को
-      अपने carrier की recommended settings के अनुसार check करें।
-    </p>
-
-  </div>
-
-  <div class="info" id="heating">
-
-    <h2>🌡️ Phone गर्म होने पर क्या करें?</h2>
-
-    <p>
-      बहुत ज्यादा demanding apps बंद करें, phone को direct sunlight
-      से दूर रखें और charging के दौरान heavy gaming से बचें।
-    </p>
-
-  </div>
-
-  <div class="info" id="hang">
-
-    <h2>📱 Phone Hang होने पर क्या करें?</h2>
-
-    <p>
-      Unused apps और files हटाएँ, storage खाली रखें और
-      software updates उपलब्ध हैं या नहीं यह check करें।
-    </p>
-
-  </div>
-
-  <div class="info" id="androidtips">
-
-    <h2>🤖 Android Useful Settings</h2>
-
-    <p>
-      Privacy, permissions, notifications, battery और
-      security sections को समय-समय पर check करना अच्छी practice है।
-    </p>
-
-  </div>
-
-  <div class="info" id="permissions">
-
-    <h2>🔐 App Permissions कैसे Check करें?</h2>
-
-    <p>
-      Settings में Apps या Privacy section खोलकर permissions
-      देख सकते हैं। जिन permissions की किसी app को जरूरत नहीं है,
-      उन्हें अपने phone के available controls के अनुसार manage करें।
-    </p>
-
-  </div>
-
-  <div class="info" id="whatsapptips">
-
-    <h2>💬 WhatsApp Privacy Settings</h2>
-
-    <p>
-      WhatsApp की Privacy settings में profile photo,
-      last seen, online status और दूसरे available privacy controls
-      अपनी जरूरत के अनुसार सेट करें।
-    </p>
-
-  </div>
-
-  <div class="info" id="brandtips">
-
-    <h2>📱 Mobile Brand Tips</h2>
-
-    <p>
-      Samsung, Redmi, Xiaomi, Realme, Vivo, OPPO, Motorola और
-      OnePlus जैसे phones में settings के नाम और location अलग हो
-      सकते हैं। किसी भी setting को बदलने से पहले अपने phone model
-      और Android version को check करें।
-    </p>
-
-  </div>
-
-</div>
+</section>
 
 <footer>
 
-  <p>© 2026 Mobile Guru Hindi</p>
+  <p>
+    © 2026 Mobile Guru Hindi
+  </p>
 
-  <br>
+  <p>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="disclaimer.html">Disclaimer</a>
+  </p>
 
-  <a href="#about">About Us</a>
-  <a href="#">Contact</a>
-  <a href="#">Privacy Policy</a>
-  <a href="#">Disclaimer</a>
+  <p>
+    Mobile Tips और Android Solutions हिंदी में 📱
+  </p>
 
 </footer>
 
@@ -602,47 +577,22 @@
 
 function searchArticles() {
 
-  const query =
-    document.getElementById("searchBox")
-    .value
-    .toLowerCase()
-    .trim();
+  let input = document.getElementById("searchInput");
+  let filter = input.value.toLowerCase();
 
-  const articles =
-    document.querySelectorAll(".article");
+  let cards = document.querySelectorAll(".card");
 
-  const noResult =
-    document.getElementById("noResult");
+  cards.forEach(function(card) {
 
-  let found = 0;
+    let text = card.innerText.toLowerCase();
 
-  articles.forEach(article => {
-
-    const text =
-      article.innerText.toLowerCase();
-
-    if (query === "" || text.includes(query)) {
-
-      article.style.display = "block";
-      found++;
-
+    if (text.includes(filter)) {
+      card.style.display = "";
     } else {
-
-      article.style.display = "none";
-
+      card.style.display = "none";
     }
 
   });
-
-  if (found === 0 && query !== "") {
-
-    noResult.style.display = "block";
-
-  } else {
-
-    noResult.style.display = "none";
-
-  }
 
 }
 
